@@ -15,8 +15,8 @@ class Application(Frame):
         """ Create all the buttons for calculator. """
         # Users input stored as an Entry widget.
 
-        self.user_input = Entry(self, bg = "#5BC8AC", bd = 29,
-        insertwidth = 4, width = 24,
+        self.user_input = Entry(self, bg = "Green", bd = 29,
+        insertwidth = 4, width = 20,
         font = ("Verdana", 20, "bold"), textvariable = self.UserIn, justify = RIGHT)
         self.user_input.grid(columnspan = 4)
 
@@ -120,8 +120,8 @@ class Application(Frame):
         self.Equalbutton.grid(row = 5, column = 1, sticky = W, columnspan = 2)
 
         # Clear button 
-        self.Clearbutton = Button(self, bg = "#E6D72A", bd = 12,
-        text = "Clear", font = ("Helvetica", 20, "bold"), width = 28, padx = 7, command = self.ClearDisplay)
+        self.Clearbutton = Button(self, bg = "White", bd = 12,
+        text = "Clear", font = ("Helvetica", 20, "bold"), width = 30, padx = 20, command = self.ClearDisplay)
         self.Clearbutton.grid(row = 1, columnspan = 4, sticky = W)
 
     def buttonClick(self, number):
